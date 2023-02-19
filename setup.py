@@ -8,7 +8,7 @@ setup(name='grobid_client_python',
       author='edumg180032',
       long_description=open("Readme.md", encoding='utf-8').read(),
       long_description_content_type="text/markdown",
-      url="https://github.com/edumg180032/IA-OS/grobid_client_python",
+      url="https://github.com/edumg180032/IA-OS",
       packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
       install_requires=['requests'],
       entry_points={
