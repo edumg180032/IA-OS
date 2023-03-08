@@ -46,4 +46,16 @@ docker run -it --rm --network="networkIA2" -v "<pdf_path>:<path_new_content>" mi
 Depending on your operating system the <pdf_path> could have different formats:
 In Linux: /home/<username>/.../
 In Windows: "//d/.../"
-       
+
+### Step 5:
+To activate the poetry shell we run:
+poetry shell
+
+### Step 6:
+To finish we move to "iaosproject" directory and execute:
+poetry run python3.10 __init__.py  
+
+
+After this we may see this in our terminal: 
+
+         
