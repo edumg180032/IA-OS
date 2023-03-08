@@ -60,7 +60,7 @@ To finish we move to "iaosproject" directory and execute
 > poetry run python3.10 __init\_\_.py  
 
 
-After this we may see this in our terminal: 
+After this we may see this in our terminal (you should have other pdf names): 
          
          
 ![](https://github.com/edumg180032/IAOSProject/blob/main/captura.png)
