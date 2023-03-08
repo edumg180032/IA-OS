@@ -21,23 +21,23 @@ Also we need to have installed "Poetry", we can do it by using this command: (if
 ## Instructions for use
 ### Step 1: 
 First of all you may clone this repository with command:  
-***git clone https://github.com/edumg180032/IA-OS
+***git clone https://github.com/edumg180032/IA-OS ***
 
 ### Step 2:
 After this you have to be located on directory "IAOSProject" and execute: 
-***docker network create <network_name>
+***docker network create <network_name>***
 
 ### Step 3:
 You have to run the grobid service who is on port 8070 using this command:
-***docker run --name grobid --network <network_name> -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2
+***docker run --name grobid --network <network_name> -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2 ***
 
 We can check if grobid it's running properly by entering on the internet:  
-***http://localhost:8070
+***http://localhost:8070 ***
 
 ### Step 4:
 Open a new terminal, because the last one will be running grobid. 
 In this point we have to run:
-***docker run -it --rm --network="networkIA2" -v "<pdf_path>:<path_new_content>" mi_imagen
+***docker run -it --rm --network="networkIA2" -v "<pdf_path>:<path_new_content>" mi_imagen ***
 
 <pdf_path> is the path in which you have located all the pdf files in your local computer.
 <path_new_content> is the path in which it will upload the pdf files as well as the results of running the script
