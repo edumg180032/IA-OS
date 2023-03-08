@@ -1,10 +1,13 @@
 # IA-OS
-In this project our objective is to obtain data of 10 pdfs, in particular we want: A list of the urls that each pdf contains
+In this project our objective is to obtain data of 10 pdfs, in particular we want: 
+         A list of the urls that each pdf contains
          A graphic with each pdf and the number of images and pictures they have
          An image generated with relevant words of all pdf files (Keyword)
 
 To perform all these actions we will execute a Python Script. 
-Moreover, to analyze and treat, as well as convert to XML each pdf we are going to use a web service called "grobid". 
+Also, to analyze and treat, as well as convert to XML each pdf we are going to use a web service called "grobid". 
+Moreover, we are going to use Poetry which is a Python package and dependency manager that simplifies the packaging, publishing, and installation of Python projects.
+
 
 ## 
 #### Author: Eduardo Marquina García
@@ -13,9 +16,10 @@ Moreover, to analyze and treat, as well as convert to XML each pdf we are going 
 
 ## Pre- Requirements
 You must have installed "Docker" which is a software container platform that enables consistent application deployment across any environment. 
-Depending on your Operating System you could do it in Linux through your terminal or in Windows installing "Docker Desktop".
+Depending on your Operating System you could do it in Linux through your terminal or in Windows installing "Docker Desktop". For this action you can use this url: https://www.docker.com/products/docker-desktop/
 
-Also we need to have installed "Poetry", we can do it by using this command: (if you are using Linux) or by pip install poetry (if you are using Windows).
+Also we need to pull the grobid image, so we have to execute:
+> docker pull lfoppiano/grobid:${latest_grobid_version}
 
 
 ## Instructions for use
