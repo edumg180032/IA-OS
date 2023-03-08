@@ -62,5 +62,5 @@ To finish we move to "iaosproject" directory and execute
 
 After this we may see this in our terminal: 
 
-         ![captura](https://user-images.githubusercontent.com/124807183/223874490-90ea816c-6a3d-4a0f-a993-58e72a243739.png)
+         
 
