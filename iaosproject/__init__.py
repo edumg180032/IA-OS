@@ -31,7 +31,6 @@ stop_words = set(stopwords.words('english'))
 
 
 # Directorio de PDFs
-#pdf_dir = 'D:/UNIVERSIDAD/OPTATIVAS 3º y 4º/IA y Ciencia Abierta/IAOSProject/Files'
 pdf_dir= '/IAOSProject/media/'
 
 # Listas para almacenar los conteos de URLs, imágenes y palabras abtractas
@@ -43,8 +42,6 @@ abstracts = []
 #Funcion para acceder a grobid
 def send_grobid(path):
 # URL de Grobid
-#localhost por grobid
-   # grobid_url = 'http://localhost:8070/api/processFulltextDocument'
     grobid_url = 'http://grobid:8070/api/processFulltextDocument'
     with open(path,'rb') as file:
         response = requests.post(grobid_url, files = {'input':file})
@@ -82,11 +79,8 @@ for filename in os.listdir(pdf_dir):
         images_count = len(root.findall(".//{http://www.tei-c.org/ns/1.0}figure"))
         #print(f'Número de imágenes: {images_count}')
 
-        #Conteo de urls (COMPROBACIÓN TEST)
-        #all_urls = len(root.findall(".//{http://www.tei-c.org/ns/1.0}ref"))
-        #print(f'Número de urls: {all_urls}')
-        
-################################################################################################
+
+
         with fitz.open(path_complete) as doc:
             urls = []  # Crear la lista de URLs para este PDF
             for page in doc:
@@ -101,15 +95,13 @@ for filename in os.listdir(pdf_dir):
                     print(f'\t{url}')
             else:
                 print(f'No se encontraron URLs en {filename}.')
-####################################################################################################
+
 
         # Extraer el abstract del xml
         abstract = ''
         for ab in root.findall(".//{http://www.tei-c.org/ns/1.0}abstract"):
             for p in ab.findall(".//{http://www.tei-c.org/ns/1.0}p"):
                 abstract += p.text.strip() + '\n'
-        #OPCIONAL (TEST)        
-        #print(f'Abstract: {abstract}')
 
         # Filtro de las stop words del texto del abstract. 
         abstract_clean = ' '.join([word for word in abstract.split() if word.lower() not in stop_words]) 
@@ -123,10 +115,6 @@ all_abstracts = ' '.join(abstracts)
 
 # Crear el conteo de palabras
 word_freq = Counter(all_abstracts.split())
-
-#OPCIONAL (TEST)
-#Imprimo para saber si el diccionario de palabras no es 0
-#print(word_freq)
 
 # Crear la nube de palabras
 create_wordcloud(word_freq)
