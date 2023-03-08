@@ -6,7 +6,7 @@ In this project our objective is to obtain data of 10 pdfs, in particular we wan
 To perform all these actions we will execute a Python Script. 
 Moreover, to analyze and treat, as well as convert to XML each pdf we are going to use a web service called "grobid". 
 
-## Artificial Intelligence And Open Science In Research Software Engineering
+## 
 #### Author: Eduardo Marquina García
 #### Contact: eduardo.marquina.garcia@alumnos.upm.es
 #### Year: 2023
