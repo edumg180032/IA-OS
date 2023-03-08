@@ -64,5 +64,13 @@ After this we may see this in our terminal (you should have other pdf names):
          
          
 ![](https://github.com/edumg180032/IAOSProject/blob/main/captura.png)
-         
 
+         
+         
+         
+         
+         
+         
+### Aditional Step:
+To prove everything is running correctly move to "tests" directory and execute again:
+> poetry run python3.10 __init\_\_.py  
