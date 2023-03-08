@@ -56,8 +56,8 @@ To activate the poetry shell we run:
 > poetry shell
 
 ### Step 6:
-To finish we move to "iaosproject" directory and execute (The name of the script is __init\_\_.p without "" )
-> poetry run python3.10 __init__.py  
+To finish we move to "iaosproject" directory and execute 
+> poetry run python3.10 __init\_\_.py  
 
 
 After this we may see this in our terminal: 
