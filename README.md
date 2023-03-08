@@ -41,10 +41,10 @@ We can check if grobid it's running properly by entering on the internet:
 ### Step 4:
 Open a new terminal, because the last one will be running grobid. 
 In this point we have to run:
-> docker run -it --rm --network="networkIA2" -v "<pdf_path>:<path_new_content>" mi_imagen 
+> docker run -it --rm --network="<network_name>" -v "<pdf_path>:<project_path>" mi_imagen 
 
 <pdf_path> is the path in which you have located all the pdf files in your local computer.
-<path_new_content> is the path in which it will upload the pdf files as well as the results of running the script
+<project_path> is the path in which it will upload the pdf files as well as the results of running the script
 
 ¡CAUTION!
 Depending on your operating system the <pdf_path> could have different formats:
@@ -57,7 +57,7 @@ To activate the poetry shell we run:
 
 ### Step 6:
 To finish we move to "iaosproject" directory and execute:
-> poetry run python3.10 __init__.py  
+ poetry run python3.10 __init__.py  
 
 
 After this we may see this in our terminal: 
