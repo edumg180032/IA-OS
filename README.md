@@ -6,6 +6,6 @@
 
 ## Instructions for use
 ### Step 1: 
-First of all you may clone this repository with command:  ´´´git clone https://github.com/edumg180032/IA-OS´´´
+First of all you may clone this repository with command:  **git clone https://github.com/edumg180032/IA-OS´´´**
 
 ### Step 2:
