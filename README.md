@@ -61,6 +61,8 @@ To finish we move to "iaosproject" directory and execute
 
 
 After this we may see this in our terminal: 
+         
+         
 ![](https://github.com/edumg180032/IAOSProject/blob/main/captura.png)
          
 
