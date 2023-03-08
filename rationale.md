@@ -1,4 +1,4 @@
-### RATIONALE.MD
+# RATIONALE.MD
 ## Dependencies
 The following libraries are required to run the script:
 
