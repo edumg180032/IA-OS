@@ -16,7 +16,7 @@ Moreover, we are going to use Poetry which is a Python package and dependency ma
 
 ## Pre- Requirements
 You must have installed "Docker" which is a software container platform that enables consistent application deployment across any environment. 
-Depending on your Operating System you could do it in Linux through your terminal or in Windows installing "Docker Desktop". For this action you can use this url: https://www.docker.com/products/docker-desktop/ or to install it in Linux you can use: https://grobid.readthedocs.io/en/latest/Grobid-docker/#crf-only-image 
+Depending on your Operating System you could do it in Linux through your terminal or in Windows installing "Docker Desktop". For this action you can use this url: https://www.docker.com/products/docker-desktop/ or to install it in Linux you can also use the following instructions in this repository: https://grobid.readthedocs.io/en/latest/Grobid-docker/#crf-only-image 
 
 Also we need to pull the grobid image, so we have to execute:
 > docker pull lfoppiano/grobid:${latest_grobid_version}
