@@ -48,7 +48,7 @@ Open a new terminal, because the last one will be running grobid.
 In this point we have to run:
 > docker run -it --rm --network="<network_name>" -v "<pdf_path>:<project_path>" <image_name> 
 
-<pdf_path> is the path in which you have located all the pdf files in your local computer.
+<pdf_path> is the path in which you have located all the pdf files in your local computer (in my case the "Files" directory)
 <project_path> is the path in which it will upload the pdf files as well as the results of running the script
 
 ¡CAUTION!
