@@ -46,13 +46,13 @@ We have to generate the image while being in IAOSProject directory by putting th
 ### Step 5:
 Open a new terminal, because the last one will be running grobid. 
 In this point we have to run:
-> docker run -it --rm --network="<network_name>" -v "<pdf_path>:<project_path>" <image_name> 
+> docker run -it --rm --network="<network_name>" -v <pdf_path>:<project_path> <image_name> 
 
 <pdf_path> is the path in which you have located all the pdf files in your local computer (in my case the "Files" directory)
 <project_path> is the path in which it will upload the pdf files as well as the results of running the script
 
 ¡CAUTION!
-Depending on your operating system the <pdf_path> could have different formats:
+Depending on your operating system the <pdf_path> and <project_path> could have different formats:
 In Linux: /home/<username>/.../
 In Windows: "//d/.../"
 
